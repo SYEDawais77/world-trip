@@ -1,0 +1,76 @@
+{
+  "cities": [
+    {
+      "id": "e2ad",
+      "cityName": "Mirpur Sakro",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2024-07-16T17:04:16.655Z",
+      "notes": "",
+      "position": {
+        "lat": "24.703352127746864",
+        "lng": "67.31460571289064"
+      }
+    },
+    {
+      "id": "ea48",
+      "cityName": "Karachi",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2024-07-16T17:04:37.101Z",
+      "notes": "",
+      "position": {
+        "lat": "24.93755453901094",
+        "lng": "67.25967407226564"
+      }
+    },
+    {
+      "id": "b939",
+      "cityName": "Bhachau",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-07-16T17:04:49.830Z",
+      "notes": "",
+      "position": {
+        "lat": "24.084515751318534",
+        "lng": "69.57366943359376"
+      }
+    },
+    {
+      "id": "ada1",
+      "cityName": "Kohat",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2024-07-16T17:06:46.697Z",
+      "notes": "",
+      "position": {
+        "lat": "33.55527190395242",
+        "lng": "71.44958496093751"
+      }
+    },
+    {
+      "id": "09cd",
+      "cityName": "Wad",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2024-07-16T20:00:26.384Z",
+      "notes": "",
+      "position": {
+        "lat": "26.932216289276298",
+        "lng": "66.75292968750001"
+      }
+    },
+    {
+      "id": "4cc3",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-07-17T04:15:56.683Z",
+      "notes": "great",
+      "position": {
+        "lat": "51.557249244820945",
+        "lng": "-0.07801301089017666"
+      }
+    }
+  ]
+}
