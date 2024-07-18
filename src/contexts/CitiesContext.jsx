@@ -1,4 +1,11 @@
-import { createContext, useEffect, useContext, useReducer } from "react";
+import {
+  createContext,
+  useEffect,
+  useContext,
+  useReducer,
+  useCallback,
+} from "react";
+import PropTypes from "prop-types";
 
 const BASE_URL = "http://localhost:8000/";
 const CitiesContext = createContext();
@@ -82,25 +89,29 @@ function CitiesProvider({ children }) {
     fetchCities();
   }, []);
 
-  async function getCity(id) {
-    dispatch({
-      type: "loading",
-    });
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (Number(id) === currentCity.id) return;
+      dispatch({
+        type: "loading",
+      });
 
-    try {
-      const response = await fetch(`${BASE_URL}cities/${id}`);
-      const data = await response.json();
-      dispatch({
-        type: "city/loaded",
-        payload: data,
-      });
-    } catch (error) {
-      dispatch({
-        type: "rejected",
-        payload: error.message,
-      });
-    }
-  }
+      try {
+        const response = await fetch(`${BASE_URL}cities/${id}`);
+        const data = await response.json();
+        dispatch({
+          type: "city/loaded",
+          payload: data,
+        });
+      } catch (error) {
+        dispatch({
+          type: "rejected",
+          payload: error.message,
+        });
+      }
+    },
+    [currentCity.id]
+  );
 
   async function createCity(newCity) {
     dispatch({
@@ -171,3 +182,7 @@ function useCities() {
 }
 
 export { CitiesProvider, useCities };
+
+CitiesProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
