@@ -10,10 +10,11 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import { useState, useEffect } from "react";
-import { useCities } from "../contexts/CitiesContext";
+import { useCities } from "../constant/constant.js";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
 import { useURLPosition } from "../hooks/useURLPosition";
+import PropTypes from "prop-types";
 export default function Map() {
   let currentCityMapPosition;
   const { cities, currentCity } = useCities();
@@ -100,3 +101,11 @@ function DetectClickOnMap() {
     click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
 }
+Map.propTypes = {
+  cities: PropTypes.array,
+  currentCity: PropTypes.object,
+};
+
+ChangeMapPosition.propTypes = {
+  position: PropTypes.array,
+};

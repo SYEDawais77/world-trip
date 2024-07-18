@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useEffect,
-  useContext,
-  useReducer,
-  useCallback,
-} from "react";
+import { createContext, useEffect, useReducer, useCallback } from "react";
 import PropTypes from "prop-types";
 
 const BASE_URL = "http://localhost:8000/";
@@ -174,14 +168,7 @@ function CitiesProvider({ children }) {
   );
 }
 
-function useCities() {
-  const context = useContext(CitiesContext);
-  if (!context)
-    throw new Error("useCities must be used within a CitiesProvider");
-  return context;
-}
-
-export { CitiesProvider, useCities };
+export { CitiesProvider, CitiesContext };
 
 CitiesProvider.propTypes = {
   children: PropTypes.node.isRequired,

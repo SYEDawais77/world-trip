@@ -6,7 +6,7 @@ import AppNav from "./AppNav";
 export default function Siderbar() {
   return (
     <div className={styles.sidebar}>
-      <Logo />
+      <Logo  />
       <AppNav />
       <Outlet />
       <Footer />

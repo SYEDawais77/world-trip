@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./CountryList.module.css";
 import Spinner from "./Spinner";
 import Message from "./Message";
-import { useCities } from "../contexts/CitiesContext";
+import { useCities } from "../constant/constant";
 export default function CountryList() {
   const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;

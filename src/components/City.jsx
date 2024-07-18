@@ -1,9 +1,9 @@
-import { useCities } from "../contexts/CitiesContext";
 import styles from "./City.module.css";
 import Button from "./Button";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
+import { useCities } from "../constant/constant";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {

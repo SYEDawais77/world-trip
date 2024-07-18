@@ -71,6 +71,42 @@
         "lat": "24.928271453306582",
         "lng": "67.6706112920017"
       }
+    },
+    {
+      "id": "2467",
+      "cityName": "Houghton",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-07-18T16:06:35.573Z",
+      "notes": "",
+      "position": {
+        "lat": "52.335756069366866",
+        "lng": "-0.10986328125000001"
+      }
+    },
+    {
+      "id": "915f",
+      "cityName": "Karachi",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2024-07-18T16:11:38.912Z",
+      "notes": "",
+      "position": {
+        "lat": "24.917316752676484",
+        "lng": "67.30224609375001"
+      }
+    },
+    {
+      "id": "bfd3",
+      "cityName": "Hetian",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2024-07-18T16:51:08.776Z",
+      "notes": "",
+      "position": {
+        "lat": "37.50957501941009",
+        "lng": "81.59408079535322"
+      }
     }
   ]
 }
